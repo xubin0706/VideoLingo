@@ -3,15 +3,15 @@ version: "2.1.2"
 ## ======================== Basic Settings ======================== ##
 # API settings
 api:
-  key: 'YOUR_API_KEY'
-  base_url: 'https://api.302.ai'
-  model: 'gemini-2.0-flash-exp'
+  key: 'sk-ypizyanjrvkzzclkjpmqfwlgrgvntichsnlvkbvpokgdptmh'
+  base_url: 'https://api.siliconflow.cn'
+  model: 'Qwen/Qwen2-VL-72B-Instruct'
 
 # Language settings, written into the prompt, can be described in natural language
 target_language: '简体中文'
 
 # Whether to use Demucs for vocal separation before transcription
-demucs: false
+demucs: true
 
 whisper:
   # ["medium", "large-v3", "large-v3-turbo"]. Note: for zh model will force to use Belle/large-v3
@@ -49,7 +49,7 @@ pause_before_translate: false
 
 ## ======================== Dubbing Settings ======================== ##
 # TTS selection [sf_fish_tts, openai_tts, gpt_sovits, azure_tts, fish_tts, edge_tts, custom_tts]
-tts_method: 'azure_tts'
+tts_method: 'edge_tts'
 
 # SiliconFlow FishTTS
 sf_fish_tts:
